@@ -8,12 +8,12 @@ package com.mycompany.hospital.frames.login;
  *
  * @author eduar
  */
-public class login extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
 
     /**
-     * Creates new form login
+     * Creates new form Login
      */
-    public login() {
+    public Login() {
         initComponents();
     }
 
@@ -26,21 +26,148 @@ public class login extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        painelGeral = new javax.swing.JPanel();
+        painelLogin = new javax.swing.JPanel();
+        loginLabel = new javax.swing.JLabel();
+        usuarioLabel = new javax.swing.JLabel();
+        usuarioTextField = new javax.swing.JTextField();
+        senhaLabel = new javax.swing.JLabel();
+        senhaTextField = new javax.swing.JTextField();
+        roundButton1 = new com.mycompany.hospital.customs.jbutton.RoundButton();
+        painelIMG = new javax.swing.JPanel();
+        imagemLabel = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Hospital Santo Amaro");
+        setMaximumSize(new java.awt.Dimension(683, 728));
+        setMinimumSize(new java.awt.Dimension(512, 512));
+        setName("frame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(700, 512));
+        setResizable(false);
+
+        painelGeral.setBackground(new java.awt.Color(51, 102, 255));
+        painelGeral.setMaximumSize(null);
+
+        painelLogin.setBackground(new java.awt.Color(51, 102, 255));
+
+        loginLabel.setBackground(new java.awt.Color(255, 255, 255));
+        loginLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        loginLabel.setForeground(new java.awt.Color(255, 255, 255));
+        loginLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        loginLabel.setText("LOGIN");
+        loginLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+
+        usuarioLabel.setBackground(new java.awt.Color(255, 255, 255));
+        usuarioLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        usuarioLabel.setForeground(new java.awt.Color(255, 255, 255));
+        usuarioLabel.setText("Usuario:");
+
+        usuarioTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        usuarioTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuarioTextFieldActionPerformed(evt);
+            }
+        });
+
+        senhaLabel.setBackground(new java.awt.Color(255, 255, 255));
+        senhaLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        senhaLabel.setForeground(new java.awt.Color(255, 255, 255));
+        senhaLabel.setText("Senha:");
+
+        senhaTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
+        roundButton1.setText("ENTRAR");
+        roundButton1.setBorderColor(new java.awt.Color(204, 204, 204));
+        roundButton1.setColorClick(new java.awt.Color(204, 204, 204));
+        roundButton1.setColorOver(new java.awt.Color(204, 204, 204));
+        roundButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        roundButton1.setRadius(10);
+
+        javax.swing.GroupLayout painelLoginLayout = new javax.swing.GroupLayout(painelLogin);
+        painelLogin.setLayout(painelLoginLayout);
+        painelLoginLayout.setHorizontalGroup(
+            painelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelLoginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(painelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(loginLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(painelLoginLayout.createSequentialGroup()
+                        .addGroup(painelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(usuarioTextField)
+                            .addComponent(senhaTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                            .addComponent(usuarioLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(senhaLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(21, 21, 21))
+            .addGroup(painelLoginLayout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(roundButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        painelLoginLayout.setVerticalGroup(
+            painelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelLoginLayout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addComponent(loginLabel)
+                .addGap(42, 42, 42)
+                .addComponent(usuarioLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(usuarioTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(senhaLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(senhaTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(roundButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        imagemLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/clinica.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout painelIMGLayout = new javax.swing.GroupLayout(painelIMG);
+        painelIMG.setLayout(painelIMGLayout);
+        painelIMGLayout.setHorizontalGroup(
+            painelIMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(imagemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 458, Short.MAX_VALUE)
+        );
+        painelIMGLayout.setVerticalGroup(
+            painelIMGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(imagemLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout painelGeralLayout = new javax.swing.GroupLayout(painelGeral);
+        painelGeral.setLayout(painelGeralLayout);
+        painelGeralLayout.setHorizontalGroup(
+            painelGeralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelGeralLayout.createSequentialGroup()
+                .addComponent(painelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(painelIMG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        painelGeralLayout.setVerticalGroup(
+            painelGeralLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(painelLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(painelIMG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(painelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(painelGeral, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        pack();
+        setSize(new java.awt.Dimension(765, 527));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void usuarioTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuarioTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuarioTextFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -53,30 +180,40 @@ public class login extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new login().setVisible(true);
+                new Login().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel imagemLabel;
+    private javax.swing.JLabel loginLabel;
+    private javax.swing.JPanel painelGeral;
+    private javax.swing.JPanel painelIMG;
+    private javax.swing.JPanel painelLogin;
+    private com.mycompany.hospital.customs.jbutton.RoundButton roundButton1;
+    private javax.swing.JLabel senhaLabel;
+    private javax.swing.JTextField senhaTextField;
+    private javax.swing.JLabel usuarioLabel;
+    private javax.swing.JTextField usuarioTextField;
     // End of variables declaration//GEN-END:variables
 }
