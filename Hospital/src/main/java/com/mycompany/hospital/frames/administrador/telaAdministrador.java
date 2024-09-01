@@ -44,15 +44,12 @@ public class telaAdministrador extends javax.swing.JFrame {
         iconTicket = new javax.swing.JLabel();
         ticketText = new javax.swing.JLabel();
         linhaDivisoria1 = new javax.swing.JSeparator();
-        iconMensagem = new javax.swing.JLabel();
-        mensagemText = new javax.swing.JLabel();
         linhaDivisoria2 = new javax.swing.JSeparator();
         iconCadastro = new javax.swing.JLabel();
         cadastroText = new javax.swing.JLabel();
         linhaDivisoria3 = new javax.swing.JSeparator();
         iconEdit = new javax.swing.JLabel();
         editText = new javax.swing.JLabel();
-        linhaDivisoria4 = new javax.swing.JSeparator();
         iconGerenciamento = new javax.swing.JLabel();
         gerenciamentoText = new javax.swing.JLabel();
         linhaDivisoria5 = new javax.swing.JSeparator();
@@ -61,8 +58,6 @@ public class telaAdministrador extends javax.swing.JFrame {
         iconRelatorio = new javax.swing.JLabel();
         relatorioText = new javax.swing.JLabel();
         linhaDivisoria7 = new javax.swing.JSeparator();
-        iconSuporte = new javax.swing.JLabel();
-        suporteText = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Hospital Santo Amaro");
@@ -164,14 +159,6 @@ public class telaAdministrador extends javax.swing.JFrame {
         linhaDivisoria1.setBackground(new java.awt.Color(51, 51, 51));
         menuLateral.add(linhaDivisoria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 210, 10));
 
-        iconMensagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/chat-de-voz.png"))); // NOI18N
-        menuLateral.add(iconMensagem, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, -1));
-
-        mensagemText.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        mensagemText.setForeground(new java.awt.Color(255, 255, 255));
-        mensagemText.setText("Mensagens");
-        menuLateral.add(mensagemText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
-
         linhaDivisoria2.setBackground(new java.awt.Color(51, 51, 51));
         menuLateral.add(linhaDivisoria2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 210, 20));
 
@@ -194,9 +181,6 @@ public class telaAdministrador extends javax.swing.JFrame {
         editText.setText("Editar Dados");
         menuLateral.add(editText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
 
-        linhaDivisoria4.setBackground(new java.awt.Color(51, 51, 51));
-        menuLateral.add(linhaDivisoria4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 210, 10));
-
         iconGerenciamento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/gerenciamento-de-equipe (1).png"))); // NOI18N
         menuLateral.add(iconGerenciamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
 
@@ -217,23 +201,15 @@ public class telaAdministrador extends javax.swing.JFrame {
         menuLateral.add(configText, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, -1));
 
         iconRelatorio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/relatorio.png"))); // NOI18N
-        menuLateral.add(iconRelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 30, -1));
+        menuLateral.add(iconRelatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 30, -1));
 
         relatorioText.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         relatorioText.setForeground(new java.awt.Color(255, 255, 255));
         relatorioText.setText("Relatório");
-        menuLateral.add(relatorioText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, -1, -1));
+        menuLateral.add(relatorioText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));
 
         linhaDivisoria7.setBackground(new java.awt.Color(51, 51, 51));
         menuLateral.add(linhaDivisoria7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 210, 10));
-
-        iconSuporte.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/help-desk_4961759.png"))); // NOI18N
-        menuLateral.add(iconSuporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
-
-        suporteText.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        suporteText.setForeground(new java.awt.Color(255, 255, 255));
-        suporteText.setText("Suporte");
-        menuLateral.add(suporteText, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, -1, -1));
 
         getContentPane().add(menuLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 210, 670));
 
@@ -290,27 +266,22 @@ public class telaAdministrador extends javax.swing.JFrame {
     private javax.swing.JLabel iconEdit;
     private javax.swing.JLabel iconGerenciamento;
     private javax.swing.JLabel iconHome;
-    private javax.swing.JLabel iconMensagem;
     private javax.swing.JLabel iconRelatorio;
-    private javax.swing.JLabel iconSuporte;
     private javax.swing.JLabel iconTicket;
     private javax.swing.JSeparator linhaDivisoria;
     private javax.swing.JSeparator linhaDivisoria1;
     private javax.swing.JSeparator linhaDivisoria2;
     private javax.swing.JSeparator linhaDivisoria3;
-    private javax.swing.JSeparator linhaDivisoria4;
     private javax.swing.JSeparator linhaDivisoria5;
     private javax.swing.JSeparator linhaDivisoria6;
     private javax.swing.JSeparator linhaDivisoria7;
     private javax.swing.JLabel linhaSeparatoriaVertical;
     private javax.swing.JLabel lupaIcon;
-    private javax.swing.JLabel mensagemText;
     private javax.swing.JLabel menuLabel;
     private javax.swing.JPanel menuLateral;
     private javax.swing.JPanel menuPainel;
     private javax.swing.JLabel notificacaoIcon;
     private javax.swing.JLabel relatorioText;
-    private javax.swing.JLabel suporteText;
     private javax.swing.JLabel ticketText;
     private javax.swing.JLabel userIcon;
     private javax.swing.JLabel usertText;
